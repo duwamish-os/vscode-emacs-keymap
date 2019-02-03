@@ -1,8 +1,22 @@
 // Place your key bindings in this file to overwrite the defaults
 [
     { 
+        "key": "alt+1",           
+        "command": "workbench.view.explorer" 
+    },
+    { 
+        "key": "shift+delete",                 
+        "command": "editor.action.clipboardCutAction",
+        "when": "textInputFocus && !editorReadonly" 
+    },
+    { 
         "key": "ctrl+shift+-",          
         "command": "undo",
+        "when": "textInputFocus && !editorReadonly" 
+    },
+    { 
+        "key": "alt+shift+-",           
+        "command": "redo",
         "when": "textInputFocus && !editorReadonly" 
     }
 ]
